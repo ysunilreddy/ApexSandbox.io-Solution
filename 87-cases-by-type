@@ -3,11 +3,12 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
 
     for(Case c : Cases){
         if(c.Type != NULL){
-        if(!casesByTypeMap.containsKey(c.Type)){
-            casesByTypeMap.put(c.Type,new List<Case>{c});
-        }else{
+            if(!casesByTypeMap.containsKey(c.Type)){
+                casesByTypeMap.put(c.Type,new List<Case>());
+            
+            }
             casesByTypeMap.get(c.Type).add(c);
-        }
+            
         }
     }
 
