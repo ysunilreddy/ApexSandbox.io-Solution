@@ -1,8 +1,15 @@
 public static Integer findLargest(List<Integer> nums) {
-	Integer largeNum = nums[0];
-    for(Integer i=0;i<nums.size(); i++){
-        if(nums[i] > largeNum){
-            largeNum = nums[i];
+	// Integer largeNum = nums[0];
+    // for(Integer i=0;i<nums.size(); i++){
+    //     if(nums[i] > largeNum){
+    //         largeNum = nums[i];
+    //     }
+    // }
+
+    integer largeNum = nums.get(0);
+    for(Integr i : nums){
+        if(nums.get(i) > largeNum){
+            largeNum = nums.get(i);
         }
     }
     return largeNum;
