@@ -7,7 +7,7 @@ public static Integer findLargest(List<Integer> nums) {
     // }
 
     integer largeNum = nums[0];
-    for(Integer i : nums){
+    for(Integer i=0;i<nums.size(); i++){
         if(nums.get(i) > largeNum){
             largeNum = nums.get(i);
         }
